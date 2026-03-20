@@ -1,12 +1,12 @@
 def format_linter_error(error: dict) -> dict:
     new_error = {}
-    
+
     new_error["line"] = error["line_number"]
     new_error["column"] = error["column_number"]
     new_error["message"] = error["text"]
     new_error["name"] = error["code"]
     new_error["source"] = "flake8"
-    
+
     return new_error
 
 
